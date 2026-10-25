@@ -1,0 +1,1 @@
+coding-worker-smoke: diagnostics-v2
