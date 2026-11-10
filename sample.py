@@ -7,7 +7,8 @@ def shout(text):
 
 
 def greet(name):
-    # s1-nc attempt 1: trim-and-format implementation.
-    if not name or not name.strip():
+    # s1-nc attempt 2: normalize-then-concat implementation.
+    normalized = name.strip() if isinstance(name, str) else ""
+    if not normalized:
         return "Hello!"
-    return f"Hello, {name.strip()}!"
+    return "Hello, " + normalized + "!"
